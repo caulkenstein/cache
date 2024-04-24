@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>YOUR MATCH IS READY!</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="accept_container">
+      <video class="overlayVid" width="720" height="312" autoplay loop>
+        <source src="/img/overlay.webm" type="video/webm">
+      </video>
+      <img class="mapImg" src="/img/cache.jpg" />
+      <div class="Tag">YOUR MATCH IS READY!</div>
+      <div class="mapText"><img src="/img/csIcon.png"> <span>Competitive • Cache</span></div>
+      <div class="accept_button">ACCEPT</div>
+      <div class="countdown">0:00</div>
+    </div>
+  </div>
+
+  <div class="hidden">
+    <!-- <audio controls autoplay>
+      <source src="accept.mp3" type="audio/mpeg">
+    </audio> -->
+
+    <iframe src="source.mp3" allow="autoplay" style="display:none" id="iframeAudio">
+    </iframe>
+    <audio autoplay loop id="playAudio">
+      <source src="accept.mp3">
+    </audio>
+
+  </div>
+</body>
+
+<script src="main.js"></script>
+</html>
