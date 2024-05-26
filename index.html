@@ -11,16 +11,18 @@
   <div class="container">
     <div class="accept_container">
       <video class="overlayVid" width="720" height="312" autoplay loop muted>
-        <source playsinline autoplay muted loop src="/img/overlay.webm" type="video/webm">
+        <source playsinline muted loop src="/img/overlay.webm" type="video/webm">
       </video>
       <img class="mapImg" src="/img/cache.jpg" />
       <div class="Tag">YOUR MATCH IS READY!</div>
-      <div class="mapText"><img src="/img/csIcon.png"> <span>Competitive • Cache</span></div>
+      <div class="mapText">
+        <img src="/img/csIcon.png">
+        <span>Competitive • Cache</span>
+      </div>
       <div class="accept_button">ACCEPT</div>
       <div class="countdown">0:00</div>
     </div>
   </div>
-
   <div class="controls">
     <a href="https://steamcommunity.com/id/caulkenstein" class="steam-btn" title="Visit my Steam profile">
       <svg width="20" height="20" viewBox="0 0 256 259" preserveAspectRatio="xMidYMid">
@@ -29,7 +31,6 @@
           fill="#fff"></path>
       </svg>
     </a>
-
     <button class="audio-btn" id="btn-audio" title="Play it with audio!">
       <svg class="unmuted-icon" width="15" height="15" viewBox="0 0 15 15" fill="none"
         xmlns="http://www.w3.org/2000/svg">
@@ -44,11 +45,9 @@
       </svg>
     </button>
   </div>
-
-  <audio id="backgroundAudio" autoplay loop>
+  <audio id="backgroundAudio" loop>
     <source src="accept.mp3" type="audio/mpeg">
   </audio>
-
   <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
   <script src="main.js"></script>
 </body>
